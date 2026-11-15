@@ -1,10 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My GitHub Page</title>
-</head>
-<body>
-    <h1>Hello, World!</h1>
-    <p>Welcome to my brand new GitHub Pages website.</p>
-</body>
-</html>
+---
+layout: default
+---
+{% for post in site.posts %}
+<a class="post-card" href="{{ post.url | relative_url }}">
+  <div class="post-date sans">{{ post.date | date: "%B %-d, %Y" }}</div>
+  <h2 class="post-title">{{ post.title }}</h2>
+  <p class="post-excerpt">{{ post.excerpt_text }}</p>
+  {% if post.pillar %}<span class="pillar-tag sans">{{ post.pillar }}</span>{% endif %}
+</a>
+{% endfor %}

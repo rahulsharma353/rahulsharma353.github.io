@@ -1,0 +1,9 @@
+---
+layout: default
+---
+<a class="back sans" href="{{ '/' | relative_url }}">&larr; All posts</a>
+<article>
+  <h2>{{ page.title }}</h2>
+  <div class="meta sans">{{ page.date | date: "%B %-d, %Y" }}{% if page.pillar %} &middot; {{ page.pillar }}{% endif %}</div>
+  {{ content }}
+</article>

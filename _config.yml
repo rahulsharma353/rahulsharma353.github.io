@@ -1,0 +1,8 @@
+title: PM in the Loop
+description: Real AI agent-building skills for product managers — one practical post every week, straight from the workflows I actually use.
+author: Rahul Sharma
+permalink: /:title/
+future: true
+markdown: kramdown
+exclude:
+  - README.md
